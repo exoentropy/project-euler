@@ -7,7 +7,7 @@ cache = [-1] * MAX_NUMBER
 #set initial values
 cache[1] = 1
 cache[2] = 2
-#account for first even Fibonacci number
+#account for first even Fibonacci number (2)
 sumOfEvens = 2
 
 for number in range(3, MAX_NUMBER):
