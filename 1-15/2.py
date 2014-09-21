@@ -1,5 +1,6 @@
 import sys
 
+#the max is just an arbitrary value
 MAX_NUMBER = 50000
 MAX_FIBONACCI = 4000000
 #assert: no Fibonacci number can equal -1
@@ -11,7 +12,9 @@ cache[2] = 2
 sumOfEvens = 2
 
 for number in range(3, MAX_NUMBER):
+	#compute Fibonacci and update cache
 	cache[number] =  cache[number - 2] + cache[number - 1]
+	#break if conditions are exceeded
 	if (cache[number] > MAX_FIBONACCI):
 		break
 	if (cache[number] % 2 == 0):
